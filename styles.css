@@ -251,3 +251,78 @@ section {
 .footer .share img:hover{
     background: var(--main-color);
 }
+
+@media screen and (max-width: 1020px){
+    
+    section {
+        padding: 4rem 3rem;
+        margin: 0 auto;
+    }
+
+    
+    .logo-img{
+        width: 70px;
+        height: 50px;
+    }
+
+    .home{
+        max-width: 60rem;
+    }
+    .home-container {
+        background: url("./img/consertar3.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .content{
+        max-width: 30rem;
+    }
+    .content h3 {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        color: var(--main-color);
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+
+    .about .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--black);
+        gap: 1.5rem;
+    }
+
+    .container-image img{
+        width: 100%;
+        position: relative;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        align-items: center;
+    }
+
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    .address iframe{
+        width: 300px;
+        height: 350px;
+        position: relative;
+    }
+
+    
+    /*CABEÇALHO*/
+    .navbar{
+        display: none;
+    }
+}
