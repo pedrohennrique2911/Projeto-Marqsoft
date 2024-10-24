@@ -66,15 +66,6 @@ section {
     font-size: 2rem;
 }
 
-.icons img {
-    margin: 1rem;
-    cursor: pointer;
-}
-
-.icons img:hover {
-    width: 40px;
-    height: 40px;
-}
 
 .btn {
     background: var(--main-color);
@@ -253,6 +244,65 @@ section {
 }
 
 @media screen and (max-width: 1020px){
+
+    /* ESTILO DO MENU MOBILE */
+
+    .abrir-menu{
+        text-align: center;
+        right: 30px;
+        position: absolute;
+    }
+.menu-mobile{
+    background:#000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    width: 0%; 
+    overflow: hidden;
+    transition: .5s;
+}
+.menu-mobile.menu-abrir{
+    width: 70%;
+}
+
+.menu-mobile.menu-abrir ~ .overlay-menu{
+    display: block;
+}
+.menu-mobile nav{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-mobile nav a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+
+.menu-mobile nav a:hover{
+    background: var(--main-color);
+}
+
+.menu-mobile .btn-fechar{
+    padding:20px 5%;
+}
+
+.overlay-menu{
+    background: #00000092;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88;
+    display: none;
+}
+
+
     
     section {
         padding: 4rem 3rem;
@@ -323,6 +373,14 @@ section {
     
     /*CABEÇALHO*/
     .navbar{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .menu-mobile,.abrir-menu, .menu-mobile, .menu-abrir, .overlay-menu{
+        overflow: hidden;
+        width: 0%;
         display: none;
     }
 }
