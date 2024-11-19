@@ -243,6 +243,14 @@ section {
     background: var(--main-color);
 }
 
+.solicitacoes p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
 @media screen and (max-width: 1020px){
 
     /* ESTILO DO MENU MOBILE */
